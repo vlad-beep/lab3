@@ -1,0 +1,77 @@
+/* Table Styles */
+#riskTable {
+    border-collapse: collapse;
+    min-width: 52.5%;
+    margin: 20px;
+
+  }
+  
+  #riskTable th,
+  #riskTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #riskTable th {
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  .low-risk {
+    background-color: #5bdf76;
+  }
+  
+  .medium-risk {
+    background-color: #ece919;
+  }
+  
+  .high-risk {
+    background-color: #ff2002;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="number"],
+  input[type="text"],
+  
+  button {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .inputform {
+    max-width: 50%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  
+  .inputform input{
+    width: 300px;
+  }
+
+  .subform{
+    display: flex;
+    justify-content: space-between;
+  }

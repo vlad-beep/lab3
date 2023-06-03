@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lab 3 Table</title>
+  <link rel="stylesheet" type="text/css" href="lab3.css">
+</head>
+
+<body>
+  <table id="riskTable"></table>
+  <div class="inputform">
+    <div class="subform">
+      <div>
+        <label for="weightInput">Середньорічні викиди парникових газів:</label>
+        <input type="number" id="weightInput" value="30000"><br>
+      </div>
+      <div>
+        <label for="Usensor">Uліч%:</label>
+        <input type="number" id="Usensor" value="2.03"><br>
+      </div>
+    </div>
+    <div class="subform">
+      <div>
+        <label for="influenceInput">Рівні впливу:</label>
+        <input type="text" id="influenceInput" value="0.05, 0.5, 1, 5, 20"><br>
+      </div>
+      <div>
+        <label for="Upressure">Uтиск%:</label>
+        <input type="number" id="Upressure" value="0.15"><br>
+      </div>
+    </div>
+    <div class="subform">
+      <div>
+        <label for="probabilityOrCountInput">Ймовірність інциденту:</label>
+        <input type="text" id="probabilityOrCountInput" value="0.5, 1, 10, 20, 50"><br>
+      </div>
+      <div>
+        <label for="Utemp">Uтемп%:</label>
+        <input type="number" id="Utemp" value="0.18"><br>
+
+      </div>
+    </div>
+    <div class="subform">
+      <div>
+        <label for="incidentsPerYearInput">Кількість інцидентів на рік:</label>
+        <input type="text" id="incidentsPerYearInput" value="1, 3, 5, 10, 20"><br>
+      </div>
+      <div>
+        <p id="ucorelation"></p>
+      </div>
+    </div>
+    <div class="subform">
+      <div>
+        <label for="lowInput">Поріг низького ризику:</label>
+        <input type="number" id="lowInput" value="0.01"><br>
+      </div>
+      <div>
+        <p id="result"></p>
+      </div>
+    </div>
+
+
+    <label for="highInput">Поріг високого ризику:</label>
+    <input type="number" id="highInput" value="0.15"><br>
+
+    <button onclick="redrawTable()">Redraw Table</button>
+    <button id="toggleButton" onclick="toggleTable()">Кількість інцидентів на рік</button>
+    <button onclick="calculateUncertainty()">Розрахувати невизначеність</button>
+
+  </div>
+
+
+  <script src="lab3.js"></script>
+</body>
+
+</html>
